@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.img{
+    width: 344px;
+}
+
+
+.page{
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 4fr 1fr;
+    grid-template-areas: "header header" 
+    "form menu" 
+    "body menu"
+    "footer menu";
+}
+
+.page .headerContent{
+    background-color: rgb(153, 153, 153);
+    grid-area: header;
+}
+
+.page .menuContent{
+    background-color: rgb(147, 135, 135);
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:normal;
+}
+
+.page .formSection{
+    background-color: rgb(142, 130, 130);
+    grid-area: form;
+}
+
+.page .bodyContent{
+    background-color: rgb(138, 121, 121);
+    grid-area: body;
+}
+
+.page .footerContent{
+    background-color: rgb(57, 54, 54);
+    grid-area: footer;
+}
